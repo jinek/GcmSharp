@@ -242,7 +242,7 @@ namespace GcmSharp
         public void SetupRequest(string url)
         {
             request = (HttpWebRequest)WebRequest.Create(url);
-            request.ContentType = "application/json";
+            request.ContentType = "application/json;charset=UTF-8";
             request.Method = "POST";
             request.Timeout = TIMEOUT;
             request.Proxy = null;
